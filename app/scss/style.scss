@@ -22,6 +22,7 @@
       font-weight: 700;
       line-height: 28px;
       margin-left: 5px;
+      
       span{
       color: $blue;
       margin-left: -4px;
@@ -84,14 +85,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 95px;
   .menu__list{
     li{
       display: inline-block;
       font-size: 15px;
-      font-family: 'Quicksan-Medium';
+      font-family: 'Quicksan',sans-serif;
       font-weight: 500;
-      line-height: 12px;
+      line-height: 42px;
       margin-top: 30px;
     & +li{
       margin-left: 32px;
@@ -135,4 +136,51 @@
 }
 // end header
 // start products
+.products{
+  background-color:  $blue;
+  height: 725px;
+  text-align: center;
+}
+ .products__about{
+    color: #f3f3f8;
+    font-size: 60px;
+    line-height: 70px;
+  &-title{
+    font-weight: 400;
+    padding-top: 185px;
+    margin-bottom: 18px;
+   }
+   &-subtitle{
+    font-weight: 700;
+   }
+   &-text{
+     font-size: 20px;
+     font-weight: 500;
+     margin-bottom: 70px;
+   }
+   &-btn{
+     font-size: 16px;
+     font-weight: 400;
+     color: $blue;
+     button{
+       padding: 20px 30px;
+       background-color: $blue;
+       border: 1px solid #fff;
+       color:#fff;
+       
+       border-radius: 40px;
+       outline: none;
+       cursor: pointer;
+       & + button{
+         margin-left: 26px;
+       }
+     }
+      button:focus{
+        color: $blue;
+        background-color: #fff;
+        border: 0;
+        outline: none;
+      }  
+   }
+}
 

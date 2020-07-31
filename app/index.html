@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -116,8 +116,8 @@
           MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
         </div>
         <a class="products__about-btn">
-          <button>Popular Products</button>
           <button>View All Products</button>
+          <button>Popular Products</button>
         </a>
       </div>
       <div class="products__search">
@@ -180,55 +180,44 @@
   <div class="features">
     <div class="container">
       <div class="features__inner">
-        <div class="features__inner-item">
-          <div class="features__research">
-            <div class="feature__research-image">
-              <img src="images/research.png" alt="">
-            </div>
-            <div class="features__research-title">
-              Best UX Research
-            </div>
-            <div class="features__research-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </div>
-          </div>
+        <div class="item__box">
+          <img src="images/research.png" alt="">
+          <h3 class="item__box-title">
+            Best UX Research
+          </h3>
+          <p class="item__box-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </p>
         </div>
-        <div class="features__inner-item">
-          <div class="features__responsive">
-            <div class="feature__responsive-image">
-              <img src="images/responsive.png" alt="">
-            </div>
-            <div class="features__responsive-title">
-              Fully Responsive
-            </div>
-            <div class="features__research-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </div>
-          </div>
+        <div class="item__box">
+          <img src="images/responsive.png" alt="">
+          <h3 class="item__box-title">
+            Fully Responsive
+          </h3>
+          <p class="item__box-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </p>
         </div>
-        <div class="features__inner-item">
-          <div class="features__change">
-            <div class="feature__change-image">
-              <img src="images/change.png" alt="">
-            </div>
-            <div class="features__change-title">
-              Buy & Sell Easily
-            </div>
-            <div class="features__change-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet diam
-              congue is laoreet elit metus.
-            </div>
-          </div>
+        <div class="item__box">
+          <img src="images/change.png" alt="">
+          <h3 class="item__box-title">
+            Buy & Sell Easily
+          </h3>
+          <p class="item__box-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="offers">
+
+  <div class="releas">
     <div class="container">
       <div class="releas__product">
         <h3 class="releas__product-title">
@@ -240,21 +229,21 @@
       </div>
       <div class="releas__product-inner">
         <div class="releas__product-category">
-          <button>Plugins</button>
-          <button>WordPress</button>
-          <button>Site Template</button>
-          <button>PSD Template</button>
-          <button>Joomla</button>
-          <button>User Interface</button>
-          <button>Landing Page</button>
-          <button>Software</button>
+          <button type="button" data-filter="all"data-order="1">Plugins</button>
+          <button type="button" data-filter=".category-wordpress"data-order="2">WordPress</button>
+          <button type="button" data-filter=".category-psd"data-order="3">Site Template</button>
+          <button type="button" data-filter=".category-plugins"data-order="4">PSD Template</button>
+          <button type="button" data-filter=".category-wordpress"data-order="5">Joomla</button>
+          <button type="button" data-filter=".category-wordpress"data-order="6">User Interface</button>
+          <button type="button" data-filter=".category-psd"data-order="2">Landing Page</button>
+          <button type="button" data-filter=".category-plugins"data-order="4">Software</button>
         </div>
       </div>
       <div class="releas__inner-box">
-        <div class="releas__item">
+        <div class="releas__item mix category-plugins" data-order="1">
           <div class="releas__item-img" href="#" style="background-image: url(images/releas-bf.jpg);">
             <div class="releas__bg-btn">
-              <button>More Info<button/>
+              <button>More Info<button />
               <button>Live Demo</button>
             </div>
           </div>
@@ -300,10 +289,10 @@
             </div>
           </div>
         </div>
-        <div class="releas__item">
+        <div class="releas__item mix category-wordpress" data-order="2">
           <div class="releas__item-img" href="#" style="background-image: url(images/releas-bg2.jpg);">
             <div class="releas__bg-btn">
-              <button>More Info<button/>
+              <button>More Info<button />
               <button>Live Demo</button>
             </div>
           </div>
@@ -349,11 +338,11 @@
             </div>
           </div>
         </div>
-        <div class="releas__item">
+        <div class="releas__item mix category-psd" data-order="3">
           <div class="releas__item-img" href="#" style="background-image: url(images/releas-bg3.jpg);">
             <div class="releas__bg-btn">
-              <button>More Info<button/>
-              <button>Live Demo</button>
+              <button>More Info<button />
+                <button>Live Demo</button>
             </div>
           </div>
           <div class="releas__item-content">
@@ -398,11 +387,11 @@
             </div>
           </div>
         </div>
-        <div class="releas__item">
+        <div class="releas__item mix category-wordpress" data-order="4">
           <div class="releas__item-img" href="#" style="background-image: url(images/releas-bg4.jpg);">
             <div class="releas__bg-btn">
-              <button>More Info<button/>
-              <button>Live Demo</button>
+              <button>More Info<button />
+                <button>Live Demo</button>
             </div>
           </div>
           <div class="releas__item-content">
@@ -447,11 +436,11 @@
             </div>
           </div>
         </div>
-        <div class="releas__item">
+        <div class="releas__item mix category-plugins" data-order="5">
           <div class="releas__item-img" href="#" style="background-image: url(images/releas-bg2.jpg);">
             <div class="releas__bg-btn">
-              <button>More Info<button/>
-              <button>Live Demo</button>
+              <button>More Info<button />
+                <button>Live Demo</button>
             </div>
           </div>
           <div class="releas__item-content">
@@ -466,7 +455,7 @@
               </div>
               <div class="releas__item-icon">
                 <img src="images/svg/releas-logo.svg" alt="">
-                <span>Plugin</span>
+                <span>PSD</span>
               </div>
             </div>
             <div class="releas__item-text">
@@ -496,11 +485,11 @@
             </div>
           </div>
         </div>
-        <div class="releas__item">
-          <div class="releas__item-img"  style="background-image: url(images/releas-bg4.jpg);">
+        <div class="releas__item mix category-psd" data-order="6">
+          <div class="releas__item-img" style="background-image: url(images/releas-bg4.jpg);">
             <div class="releas__bg-btn">
-              <button>More Info<button/>
-              <button>Live Demo</button>
+              <button>More Info<button />
+                <button>Live Demo</button>
             </div>
           </div>
           <div class="releas__item-content">
@@ -515,7 +504,7 @@
               </div>
               <div class="releas__item-icon">
                 <img src="images/svg/releas-logo.svg" alt="">
-                <span>Plugin</span>
+                <span>HTML</span>
               </div>
             </div>
             <div class="releas__item-text">
@@ -547,7 +536,7 @@
         </div>
       </div>
       <div class="releas__btn">
-        <button>
+        <button  type="button" data-filter="all">
           All New Products
         </button>
       </div>
@@ -559,7 +548,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
